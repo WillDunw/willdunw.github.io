@@ -5,15 +5,305 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>William Dunwoody</title>
-    <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheetFont">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
-<body>
-  <div class="text-container">
-    <h1>William Dunwoody</h1>
-  </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- NAVIGATION -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">William Dunwoody</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+                      <a href="#page-top"></a>
+                    </li>
+                      <li><a href="#about" class="page-scroll">About</a></li>
+                      <li><a href="#portfolio" class="page-scroll">Projects</a></li>
+                      <li><a href="#contact" class="page-scroll">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar -->
+
+  <!-- HEADER -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-offset-2 text-center">
+            <h1 class="intro-heading">William Dunwoody</h1>
+            <br>
+            <p class="intro-text">Full-Stack Software Developer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
     
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">About Me</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <p class="lead">
+            Hi! I'm Will and welcome to my site! <br>
+            I am a computer scientist and software developer that has a great interest in databases, web development and AI. 
+            I enjoy solving complex problems and learning new skills that help me solve those problems.
+            My goal is to constantly keep learning and to participate in the creation of really cool projects.
+            Speaking of which, down below you can find some work I've done!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">My Projects <a href="https://github.com/WillDunw"><i class="fa fa-1x fa-github"></i></a></h2>
+        </div>
+      </div>  
+      
+<!-- Portfolio -->
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://github.com/WillDunw/Schedule-Planner-WPF" class="project-link" data-toggle="modal">
+            <img src="./schedulingApp.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>WPF Scheduling App</h3>
+                <p>A scheduling app that allows you to schedule your time and view how you spend it.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://github.com/WillDunw/Bumple-Social-Media" class="project-link" data-toggle="modal">
+            <img src="./bumple.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>Bumple Social Media</h3>
+                <p>A social media app centered around posting jokes that is built for android.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://github.com/breannadefo/3Budgetteers-HomeBudget" class="project-link" data-toggle="modal">
+            <img src="./budgetApp.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>Budgeting App</h3>
+                <p>An app to track your home budget: your expenses, income, savings, etc.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">Contact Me</h2>
+          <p class="lead">Interested in working together? You can reach me through email or linkedin!</p>
+        </div>
+
+        <!-- Social Media Contact-->
+        <div class="social text-center">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/william-dunwoody-5468b828b/"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
+
+            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZfxVTQTqXnRvHHnsrCkHHdBngcLdqCfdWLJWrltlWhbsKWqBpMCFnSQFbsMflPQksFg"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></a></i>
+
+            
+          </ul>
+          <div class="lead">
+          <p>williamdunwoody1@outlook.com</p>
+        </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="footer">
+    <p class="text-center lead">~Credit to Audrey for some of the UI elements</p>
+  </section>
+
+
+  <!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 1</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 2</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 3</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 4</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 5</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Project Title 6</h2>
+              <img src="http://placehold.it/650x450" class="img-responsive img-centered" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /Project Modals -->
+
 </body>
 </html>
