@@ -2,6 +2,9 @@
 BASE STYLES 
 -----------------------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 /* Box Model Hack */
 * {
     -moz-box-sizing: border-box; /* Firexfox */
@@ -11,7 +14,7 @@ BASE STYLES
 
 body {
    overflow-x: hidden;
-   font-family: 'Lato', sans-serif;
+   font-family: 'Roboto Mono', sans-serif;
 
 }
 
@@ -28,8 +31,7 @@ h5,
 h6 {
    margin: 0 0 35px;
    text-transform: uppercase;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: ;
+   font-family: 'Titillium Web', sans-serif;
    letter-spacing:1.5px;
 }
 
@@ -56,7 +58,7 @@ a:hover, a:focus, a:active  {
    height: 35px;
    border-style: solid;
    border-radius: 0;
-   font-family: Roboto;
+   font-family: 'Roboto Mono';
    font-size: 15px;
    text-transform: uppercase;
   
@@ -86,10 +88,19 @@ NAVIGATION
 
 .navbar-default .navbar-nav > li > a {
    color: #a0a9ae;
+}
 
+.navbar-default .navbar-nav > li > a:visited {
+   color: #0083AE;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
+   color: #0083AE;
+}
+
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
    color: #0083AE;
 }
 
@@ -98,8 +109,8 @@ NAVIGATION
 }
 
 .navbar-default  a.navbar-brand:visited { 
-   background-color: #2A2D2F
-   color: ;
+   background-color: #2A2D2F;
+   color: #0083AE;
 }
 
 .navbar {
@@ -110,13 +121,13 @@ NAVIGATION
 
 .navbar-brand {
    text-transform: uppercase;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Titillium Web', sans-serif;
    font-size: 25px;
    letter-spacing: 1px;
 }
 
 .navbar li {
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Titillium Web', sans-serif;
    font-weight: 400;
    font-size: 18px;
    letter-spacing: 0.5px;
@@ -131,7 +142,20 @@ HEADER
 -----------------------------------------------------------------------------*/
 
 .intro {
-   background: #0083AE;
+   background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+      background-size:cover;
+            -webkit-animation: slidein 100s;
+            animation: slidein 100s;
+    
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;  
+   /*background: #0083AE;*/
    background-position: center;
    background-repeat: no-repeat;
    display: table;
@@ -152,7 +176,7 @@ HEADER
 }
 
 .intro .intro-body .intro-heading {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Titillium Web', sans-serif;
    font-weight: 700px;
    font-size: 80px;
    color: #fff;
@@ -163,7 +187,7 @@ HEADER
 .intro .intro-text {
    margin-top: -30px;
    font-size: 23px;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto Mono', sans-serif;
    font-weight: 700px;
    color: #fff;    
 }
@@ -181,7 +205,7 @@ section {
 section h2.section-heading {
    margin-top: 0;
    margin-bottom: 15px;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Titillium Web', sans-serif;
    font-size: 50px;
    font-weight: 300;
    color: #a0a9ae;
@@ -297,7 +321,9 @@ section h2.section-heading {
    color: #a0a9ae;
 }
 
-
+.page-scroll:visited {
+   color: #0083AE;
+}
 
 /*----------------------------------------------------------------------------- 
 SOCIAL BUTTONS  
@@ -319,6 +345,23 @@ SOCIAL BUTTONS
    display: inline-block;
 }
 
+
+/*
+   Cloud in BackGround
+*/
+
+
+
+@-webkit-keyframes slidein {
+   from {background-position: top; background-size:3000px; }
+   to {background-position: -100px 0px;background-size:2750px;}
+   }
+   
+   @keyframes slidein {
+   from {background-position: top;background-size:3000px; }
+   to {background-position: -100px 0px;background-size:2750px;}
+   
+   }
 
 /*----------------------------------------------------------------------------- 
 MEDIA QUERIES 
