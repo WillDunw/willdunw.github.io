@@ -180,7 +180,7 @@ section {
 
 section h2.section-heading {
    margin-top: 0;
-   margin-bottom: 15px;
+   margin-bottom: 25px;
    font-family: 'Titillium Web', sans-serif;
    font-size: 50px;
    font-weight: 300;
@@ -281,7 +281,7 @@ section h2.section-heading {
 }
 
 #about {
-   padding: 100px 50px 100px 50px;
+   padding: 100px 50px 0px 50px;
 }
 
 #contact {
@@ -395,6 +395,29 @@ a:visited,
   outline: none; /* Remove outline for links and icons */
 }
 
+/*----------------------------------------------------------------------------
+SKILLS COLUMNS
+------------------------------------------------------------------------------*/
+
+/* CSS for the columns */
+.skills-columns {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .column {
+   flex: 1;
+ }
+ 
+ .column-list {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .column-list li {
+   margin-bottom: 10px;
+ }
+
 /*----------------------------------------------------------------------------- 
 MEDIA QUERIES 
 -----------------------------------------------------------------------------*/
@@ -444,7 +467,7 @@ MEDIA QUERIES
    }
 
    section {
-       padding: 100px 0;
+       padding: 50px 0;
        margin: auto;
    }
 }
