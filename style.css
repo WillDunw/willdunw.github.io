@@ -403,6 +403,8 @@ SKILLS COLUMNS
 .skills-columns {
    display: flex;
    justify-content: space-between;
+   column-count: 2;
+   column-gap: 40px;
  }
  
  .column {
