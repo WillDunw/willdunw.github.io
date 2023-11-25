@@ -98,8 +98,7 @@ NAVIGATION
 }
 
 .navbar-default  a.navbar-brand:visited { 
-   background-color: #2A2D2F
-   color: ;
+   background-color: #0083AE;
 }
 
 .navbar {
@@ -297,6 +296,9 @@ section h2.section-heading {
    color: #a0a9ae;
 }
 
+.page-scroll:visited {
+   color: #0083AE;
+}
 
 
 /*----------------------------------------------------------------------------- 
