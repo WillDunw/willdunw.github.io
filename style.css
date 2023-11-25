@@ -51,26 +51,6 @@ a:hover, a:focus, a:active  {
    height: auto;
 }
 
-.btn {
-   background: transparent;
-   color: #fff;
-   width: 150px;
-   height: 35px;
-   border-style: solid;
-   border-radius: 0;
-   font-family: 'Roboto Mono';
-   font-size: 15px;
-   text-transform: uppercase;
-  
-}
-
-.btn:hover {
-   background-color: white;
-   transition-duration: 0.5s;
-   color: #0083AE;
-   outline: none;
-}
-
 /*----------------------------------------------------------------------------- 
 NAVIGATION  
 -----------------------------------------------------------------------------*/
@@ -88,10 +68,6 @@ NAVIGATION
 
 .navbar-default .navbar-nav > li > a {
    color: #a0a9ae;
-}
-
-.navbar-default .navbar-nav > li > a:visited {
-   color: #0083AE;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -133,7 +109,9 @@ NAVIGATION
    text-transform: uppercase;
 }
 
-
+.navbar-header {
+   color: #a0a9ae;
+}
 
 
 /*----------------------------------------------------------------------------- 
@@ -319,9 +297,6 @@ section h2.section-heading {
    color: #a0a9ae;
 }
 
-.page-scroll:visited {
-   color: #0083AE;
-}
 /*----------------------------------------------------------------------------- 
 SOCIAL BUTTONS  
 -----------------------------------------------------------------------------*/
@@ -343,11 +318,9 @@ SOCIAL BUTTONS
 }
 
 
-/*
+/*--------------------------------------------------------------------------------------
    Cloud in BackGround
-*/
-
-
+----------------------------------------------------------------------------------------*/
 
 @-webkit-keyframes slidein {
    from {background-position: top; background-size:3000px; }
@@ -359,6 +332,68 @@ SOCIAL BUTTONS
    to {background-position: -100px 0px;background-size:2750px;}
    
    }
+
+   /*--------------------------------------------------------------------------------------
+   Icons for different projects - Credit ChatGPT
+   ---------------------------------------------------------------------------------------*/
+
+   /* CSS for the red rectangle */
+.icon-box {
+   width: 350px; /* Adjust width as needed */
+   height: 250px; /* Adjust height as needed */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background-color 0.3s ease;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 0 auto;
+ }
+ 
+ /* CSS for the icon */
+ .icon-box i {
+   color: white; /* Icon color */
+   font-size: 100px; /* Icon size */
+   transition: transform 0.3s ease;
+   outline: none;
+ }
+ 
+ .icon-box:hover i {
+   transform: scale(1.2); /* Change icon size on hover */
+ }
+
+ .icon-box-bee {
+   background-color: #ffc60d;
+ }
+
+ .icon-box-bee:hover {
+   background-color: #e1af0a; /* Change color on hover */
+ }
+
+ .icon-box-schedule {
+   background-color: #165f9e;
+ }
+
+ .icon-box-schedule:hover {
+   background-color: #13538a;
+ }
+
+ .icon-box-budget {
+   background-color: #378016;
+ }
+
+ .icon-box-budget:hover {
+   background-color: #285e10;
+ }
+
+a,
+a:hover,
+a:focus,
+a:visited,
+.icon-box i {
+  text-decoration: none; /* Remove underline for links */
+  outline: none; /* Remove outline for links and icons */
+}
 
 /*----------------------------------------------------------------------------- 
 MEDIA QUERIES 

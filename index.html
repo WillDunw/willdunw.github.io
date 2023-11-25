@@ -10,11 +10,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheetFont">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a4a6ec207c.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -25,12 +27,6 @@
     <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button> -->
         <a class="navbar-brand page-scroll" href="#page-top">William Dunwoody</a>
       </div>
 
@@ -43,6 +39,7 @@
                       <li><a href="#about" class="page-scroll navbar-brand">About</a></li>
                       <li><a href="#portfolio" class="page-scroll navbar-brand">Projects</a></li>
                       <li><a href="#contact" class="page-scroll navbar-brand">Contact</a></li>
+                      <li><a href="" class="navbar-brand">CV</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
@@ -101,7 +98,9 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="https://github.com/WillDunw/Schedule-Planner-WPF" class="project-link" data-toggle="modal">
-            <img src="./schedulingApp.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="icon-box icon-box-schedule">
+              <i class="fa-solid fa-business-time"></i>
+            </div>
             <div class="caption">
               <div class="caption-content">
                 <h3>WPF Scheduling App</h3>
@@ -113,7 +112,9 @@
 
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="https://github.com/WillDunw/Bumple-Social-Media" class="project-link" data-toggle="modal">
-            <img src="./bumple.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="icon-box icon-box-bee">
+              <i class="fa-brands fa-forumbee"></i>
+            </div>
             <div class="caption">
               <div class="caption-content">
                 <h3>Bumple Social Media</h3>
@@ -125,7 +126,9 @@
 
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="https://github.com/WillDunw/HomeBudget" class="project-link" data-toggle="modal">
-            <img src="./budgetApp.png" class="img-responsive" media="(max-width:400px)" style="width:auto;" alt="">
+            <div class="icon-box icon-box-budget">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
             <div class="caption">
               <div class="caption-content">
                 <h3>Budgeting App</h3>
@@ -153,12 +156,12 @@
           <ul>
             <li><a href="https://www.linkedin.com/in/william-dunwoody-5468b828b/"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
 
-            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZfxVTQTqXnRvHHnsrCkHHdBngcLdqCfdWLJWrltlWhbsKWqBpMCFnSQFbsMflPQksFg"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></a></i>
+            <li><a href="mailto:williamdunwoody1@outlook.com"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></a></i>
 
             
           </ul>
           <div class="lead">
-          <p>williamdunwoody1@outlook.com</p>
+            <a href="mailto:williamdunwoody1@outlook.com"><p>williamdunwoody1@outlook.com</p></a>
         </div>
         </div>
 
@@ -169,7 +172,7 @@
   </section>
 
   <section id="footer">
-    <p class="text-center lead">~Template from <a href="https://codepen.io/audreydc/pen/ZOWvBj">Audrey</a></p>
+    <p class="text-center lead">~Skeleton from <a href="https://codepen.io/audreydc/pen/ZOWvBj">Audrey</a> and clouds from <a href="https://codepen.io/alvarotrigo/pen/MWqqBXX">Álvaro</a></p>
   </section>
 
 
